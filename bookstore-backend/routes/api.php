@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('register' ,[UserController::class,'register']);
 Route::post('login' ,[UserController::class,'login']);
+Route::post('addBook' ,[BookController::class,'addBook']);
+Route::get('list' ,[BookController::class,'list']);
+Route::delete('delete/{id}' ,[BookController::class,'delete']);
+Route::get('book/{id}' ,[BookController::class,'getBook']);
+Route::get('search/{key}' ,[BookController::class,'search']);

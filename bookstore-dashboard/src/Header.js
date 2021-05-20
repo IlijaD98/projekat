@@ -12,19 +12,24 @@ function Header(){
     return(
         <div>
             <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Bookstore</Navbar.Brand>
+    <Navbar.Brand href="/">Bookstore</Navbar.Brand>
     <Nav className="mr-auto navbar_wrapper">
         {
             localStorage.getItem('user-info')?
             <>
-            <Link to="/add">Add book</Link>
-            <Link to="/update">Update book</Link>
-        
+            
+            <Link to="/book-list-advanced">Uredi knjige</Link>
+            <Link to="/search">Pretraži knjige</Link>
+            <Link to="/add">Dodaj knjigu</Link>
+            {/* <Link to="/update">Update book</Link>
+         */}
             </>
             :
             <>
+          
+             <Link to="/book-list">Knjige</Link>
             <Link to="/login">Login</Link>
-             <Link to="/register">Register</Link>
+             <Link to="/register">Registracija</Link>
             </>
         }
         

@@ -9,6 +9,20 @@
 .navbar_wrapper a{
   padding-left: 30px;
 }
+.delete{
+  border-radius: 5px;
+    background-color: #d61616;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.update{
+  border-radius: 5px;
+    background-color: lightgreen;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
