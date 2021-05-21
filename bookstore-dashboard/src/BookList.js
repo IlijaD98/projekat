@@ -29,7 +29,7 @@ function BookList(){
             <h1>Lista knjiga</h1>
             <br/>
             <div className="col-sm-8 offset-sm-2">
-            <Table>
+            <Table responsive>
                 <tr>
                     <td>Id</td>
                     <td>Naslov</td>

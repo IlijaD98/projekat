@@ -41,4 +41,19 @@ class BookController extends Controller
     function search($key){
         return Book::where('name','Like',"%$key%")->get();
     }
+
+    function updateBook($id,Request $req){
+        $book=Book::find($id);
+        $book->name=$req->input('name');
+        $book->genre=$req->input('genre');
+        $book->description=$req->input('description');
+        $book->autor=$req->input('autor');
+        if($req->file('file')){
+            $book->file_path=$req->file('file')->store('books');
+        }
+        
+        $book->quantity=$req->input('quantity');
+        $book->save();
+        return $book;
+    }
 }

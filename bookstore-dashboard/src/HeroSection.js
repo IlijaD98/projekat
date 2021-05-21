@@ -7,8 +7,8 @@ function HeroSection() {
   return (
     <div className="hero-container">
       <video src="/videos/video-pozadina.mp4" autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      <h1>AVANTURA TE ČEKA</h1>
+      <p>Pridruži se najvećoj porodici ljubitelja knjiga</p>
       
     </div>
   );
