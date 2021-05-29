@@ -11,6 +11,7 @@ import BookList from './BookList'
 import BookListAdvaned from './BookListAdvanced'
 import SearchBook from './SearchBook'
 import Start from './Start'
+import Advice from './Advice'
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,9 @@ function App() {
      </Route>
      <Route path="/book-list">
        <BookList/>
+     </Route>
+     <Route path="/advice">
+       <Advice/>
      </Route>
     
 

@@ -28,6 +28,7 @@ function Header(){
             <>
           
              <Link to="/book-list">Knjige</Link>
+             <Link to="/advice">Savet</Link>
             <Link to="/login">Login</Link>
              <Link to="/register">Registracija</Link>
             </>
