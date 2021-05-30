@@ -12,7 +12,7 @@ function Header(){
     return(
         <div>
             <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="/">Bookstore</Navbar.Brand>
+    <Navbar.Brand href="/">Knjizara</Navbar.Brand>
     <Nav className="mr-auto navbar_wrapper">
         {
             localStorage.getItem('user-info')?
@@ -29,6 +29,7 @@ function Header(){
           
              <Link to="/book-list">Knjige</Link>
              <Link to="/advice">Savet</Link>
+             <Link to="/map">Mapa</Link>
             <Link to="/login">Login</Link>
              <Link to="/register">Registracija</Link>
             </>

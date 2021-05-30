@@ -12,6 +12,7 @@ import BookListAdvaned from './BookListAdvanced'
 import SearchBook from './SearchBook'
 import Start from './Start'
 import Advice from './Advice'
+import Map from './Map'
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,9 @@ function App() {
      </Route>
      <Route path="/advice">
        <Advice/>
+     </Route>
+     <Route path="/map">
+       <Map/>
      </Route>
     
 

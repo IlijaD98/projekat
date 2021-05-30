@@ -22,7 +22,7 @@ class Advice extends React.Component{
         return(
             <>
             <Header/>
-            <h1>Potrebna ti je motivacija?</h1>
+            <h1>Pronadji svoj savet dana!</h1>
             <div className="neki-div">
         
             
